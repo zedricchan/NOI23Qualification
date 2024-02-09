@@ -1,0 +1,33 @@
+#NOI 2023 Qualification
+#swords
+
+n = int(input())
+a = []
+b = []
+
+for i in range(n):
+    anb = input().split(' ')
+    a.append(int(anb[0]))
+    b.append(int(anb[1]))
+
+# print(a, b)
+
+maxa = 0
+maxb = 0
+total = 0
+for j in range(n):
+    if a[j] > maxa:
+        maxa = a[j]
+    if b[j] > maxb:
+        maxb = b[j]
+
+# print(maxa, maxb)
+
+if a.index(maxa) != b.index(maxb):
+    for k in range(n):
+        if a[k] == maxa or b[k] == maxb:
+            total += 1
+else:
+    total = 1
+
+print(total)
