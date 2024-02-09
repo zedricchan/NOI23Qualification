@@ -1,0 +1,23 @@
+#NOI 2023 Qualification
+#doll_noi
+
+n = int(input())
+sizes = []
+for i in range(n):
+    size = int(input())
+    sizes.append(size)
+sizes.sort()
+
+stage = 0
+total = 1 #starts with 1 smallest doll
+daystotal = []
+
+for j in range(n):
+    if sizes[j] - sizes[stage] >= 2:
+        total += 1
+        stage = sizes.index(sizes[j])
+        daystotal.append(total)
+    else:
+        daystotal.append(total)
+
+print(daystotal)
