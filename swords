@@ -25,7 +25,7 @@ for j in range(n):
 
 if a.index(maxa) != b.index(maxb):
     for k in range(n):
-        if a[k] == maxa or b[k] == maxb:
+        if a[k] == maxa and b[k] == maxb:
             total += 1
 else:
     total = 1
