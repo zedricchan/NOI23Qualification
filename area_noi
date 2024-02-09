@@ -1,0 +1,15 @@
+#NOI 2023 Qualification
+#area_noi
+
+n = int(input())
+areas = []
+max = 0
+for i in range(n):
+    hnw = input().split(' ')
+    area = int(hnw[0]) * int(hnw[1])
+    areas.append(area)
+# print(areas)
+for i in range(len(areas)):
+    if areas[i] > max:
+        max = areas[i]
+print(max)
