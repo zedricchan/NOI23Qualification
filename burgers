@@ -1,0 +1,12 @@
+#NOI 2023 Qualification
+#burgers
+
+# n = int(input())
+
+# ingredient = input().split(' ')
+# recipe1 = input().split(' ')
+# recipe2 = input().split(' ')
+
+# quotients = []
+# for i in range(n):
+#     if ingredient[i] // recipe1[i] > ingredient[i] // recipe2[i]:
