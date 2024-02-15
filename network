@@ -1,0 +1,8 @@
+#NOI 2023 Qualification
+#network
+
+nm = input().split(' ')
+total = nm[0] + nm[1] -1
+for i in range(total):
+    x = input()
+    
